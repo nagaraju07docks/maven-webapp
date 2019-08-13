@@ -22,5 +22,8 @@ job('webapp Docker example') {
             forceTag(false)
             createFingerprints(false)
             skipDecorate()
+                 }
+            }
         }
     }
+}
