@@ -17,7 +17,7 @@ job('webapp Docker example') {
         dockerBuildAndPublish {
             repositoryName('jcnag/mywebapp')
             tag('${GIT_REVISION,length=9}')	
-            registryCredentials('dockerhub')
+            registryCredentials('docker-hub')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
