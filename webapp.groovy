@@ -24,4 +24,3 @@ job('webapp Docker example') {
             skipDecorate()
         }
     }
-}
