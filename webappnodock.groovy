@@ -1,5 +1,6 @@
 job('webapp Docker example') {
     scm {
+        label('jennode')
         git('git://github.com/nagaraju07docks/maven-webapp.git', '*/master') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('jenkins-dsl@gmail.com')
