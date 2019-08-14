@@ -14,8 +14,5 @@ job('webapp Docker example') {
     steps {
     	shell("cd /home/ansible/workspace/ansibleroles; git pull origin master; ansible-playbook -i 192.168.30.50, Docker-Install.yaml; ansible-playbook -i 192.168.30.50, Container-Start.yaml")
     }
-
-            }
-        }
-    }
+  }
 }
